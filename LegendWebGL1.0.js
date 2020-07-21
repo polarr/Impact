@@ -50,15 +50,25 @@ var createProgram = function(vts, fts){
 }
 
 // Rendering 
-function resize(canvas) {
+function resize(canvas, square) {
     var displayWidth  = canvas.clientWidth; 
     var displayHeight = canvas.clientHeight;
 
-    if (canvas.width  != displayWidth ||
-        canvas.height != displayHeight) {
+    if (square){
+        var display = Math.min(displayWidth, displayHeight);
 
-    canvas.width  = displayWidth;
-    canvas.height = displayHeight;
+        if (canvas.width  != display ||
+            canvas.height != display) {
+            canvas.width  = display;
+            canvas.height = display;
+        }
+    }
+    else{
+        if (canvas.width  != displayWidth ||
+            canvas.height != displayHeight) {
+            canvas.width  = displayWidth;
+            canvas.height = displayHeight;
+        }
     }
 
     gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
