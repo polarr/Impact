@@ -50,24 +50,21 @@ var createProgram = function(vts, fts){
 }
 
 // Rendering 
-function resize(canvas, square) {
-    var displayWidth  = canvas.clientWidth; 
-    var displayHeight = canvas.clientHeight;
+function resize(width, height, canvas, square) {
+    var w  = width || window.innerWidth; 
+    var h = height || window.innerHeight;
 
     if (square){
-        var display = Math.min(displayWidth, displayHeight);
+        var display = Math.min(w, h);
 
-        if (canvas.width  != display ||
-            canvas.height != display) {
-            canvas.width  = display;
-            canvas.height = display;
-        }
+        canvas.width = display;
+        canvas.height = display;
     }
     else{
         if (canvas.width  != displayWidth ||
             canvas.height != displayHeight) {
-            canvas.width  = displayWidth;
-            canvas.height = displayHeight;
+            canvas.width  = w;
+            canvas.height = h;
         }
     }
 
