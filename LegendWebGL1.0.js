@@ -50,7 +50,7 @@ var createProgram = function(vts, fts){
 }
 
 // Rendering 
-function resize(width, height, canvas, square) {
+function resize(width, height, square) {
     var w = width || window.innerWidth;
     var h = height || window.innerHeight;
     var d = Math.min(w, h);
