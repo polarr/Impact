@@ -51,16 +51,17 @@ var createProgram = function(vts, fts){
 
 // Rendering 
 function resize(width, height, canvas, square) {
-    var w  = width || window.innerWidth; 
+    var w = width || window.innerWidth;
     var h = height || window.innerHeight;
-
+    var d = Math.min(w, h);
     if (square){
-        var display = Math.min(w, h);
-        gl.viewport(0, 0, display, display);
+        gl.canvas.width = d;
+        gl.canvas.height = d;
+        gl.viewport(0, 0, d, d);
     }
     else{
+        gl.canvas.width = w;
+        gl.canvas.height = h;
         gl.viewport(0, 0, w, h);
     }
-
-    
 };
