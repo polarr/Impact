@@ -56,17 +56,11 @@ function resize(width, height, canvas, square) {
 
     if (square){
         var display = Math.min(w, h);
-
-        canvas.width = display;
-        canvas.height = display;
+        gl.viewport(0, 0, display, display);
     }
     else{
-        if (canvas.width  != displayWidth ||
-            canvas.height != displayHeight) {
-            canvas.width  = w;
-            canvas.height = h;
-        }
+        gl.viewport(0, 0, w, h);
     }
 
-    gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+    
 };
