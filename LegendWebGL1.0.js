@@ -4,7 +4,7 @@ var initgl = function(canvas){
     if (!c || c.tagName !== "CANVAS"){
         throw new Error("Invalid canvas id or id tag");
     }
-    var gl = c.getContext("webgl");
+    var gl = c.getContext("webgl", { preserveDrawingBuffer: true, antialias: false, premultipliedAlpha: false });
 
     if (!gl){
         throw new Error("WebGL not supported, try better browser");
