@@ -1,7 +1,7 @@
 # LegendGL
 
-A small WebGL boilerplate library, made in `March 2020` by `1egend`
-
+A small WebGL boilerplate library, made in `March 2020` by `1egend`<br>
+jsDelivr CDN: https://cdn.jsdelivr.net/gh/1e9end/LegendGL/dist/1.0.js<br><br>
 Documentation:<br>
 `function initGL(id x)`<br>
 Returns the WebGL context/environment in the canvas element with id=`x`.<br><br>
