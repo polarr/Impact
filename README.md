@@ -26,6 +26,6 @@ Resizes the canvas with id=`canvas`. `w, h` are optional inputs. If omitted, `w,
 ---
 ### License
 
-Copyright © 2020 1egend (1e9end)
+Copyright © 2020-2021 1egend (1e9end)
 
 Licensed under the GPL-3.0 license, see [LICENSE](LICENSE) for details.
