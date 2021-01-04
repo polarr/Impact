@@ -1,11 +1,11 @@
-# LegendGL
+# Impact
 
 A lightweight WebGL boilerplate library, made in `March, 2020` by [1egend](https://1e9end.github.io)<br>
 
 ### Installation
-jsDelivr CDN: https://cdn.jsdelivr.net/gh/1e9end/LegendGL/1.0.js
+jsDelivr CDN: https://cdn.jsdelivr.net/gh/1e9end/Impact/main.js
 ```
-<script src = "https://cdn.jsdelivr.net/gh/1e9end/LegendGL/1.0.js"></script>
+<script src = "https://cdn.jsdelivr.net/gh/1e9end/Impact/main.js"></script>
 // rest of code...
 ```
 
