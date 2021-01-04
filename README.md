@@ -22,3 +22,10 @@ Creates and returns a `type = gl.VERTEX_SHADER/gl.FRAGMENT_SHADER` shader with t
 Creates and returns a program with attached vertex and fragment shaders: `vtx`, `ftx` (gl.createShader)s <br /> <br />
 `void resize(string canvas, float w, float h, bool sq)` <br /> 
 Resizes the canvas with id=`canvas`. `w, h` are optional inputs. If omitted, `w, h` will be set to `window.innerWidth, window.innerHeight`. If `sq = true`, then it will resize the canvas to a square with side length `min(w, h)`.
+
+---
+### License
+
+Copyright © 2020 1egend (1e9end)
+
+Licensed under the GPL-3.0 license, see LICENSE.md for details.
